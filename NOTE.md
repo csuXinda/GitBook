@@ -50,6 +50,7 @@ struct结构体包括标识符pid、状态status、上下文、优先级、CPU�
 线程(thread)内核线程，协程(goroutine)用户线程。一个“用户态线程”必须要绑定一个“内核态线程”，但是CPU并不知道有“用户态线程”的存在，它只知道它运行的是一个“内核态线程”(Linux的PCB进程控制块)。
 频繁进程/线程切换/多线程/多进程，造成CPU、内存消耗。M:N提高CPU利用率。GM引入P(Processor)调度器，把可运行的goroutine分配到工作线程上(M)，利用队列缓存和P之间的G调度减少M锁，提高利用率。  
 ![img.png](img/img.png)
+### CSP并发模型
 ### [调试优化](https://cloud.tencent.com/developer/article/1469185)
 * pprof
 * go test 
@@ -61,6 +62,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 ### map
 
 ## Python
+###[爬虫](https://cuiqingcai.com/archives/)
 ### 迭代器&&生成器
 ## Docker
 ## Kubernetes
@@ -80,3 +82,10 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * AP wihtout C：要高可用并允许分区，则需放弃一致性。一旦分区发生，节点之间可能会失去联系，为了高可用，每个节点只能用本地数据提供服务，而这样会导致全局数据的不一致性。典型的应用就如某米的抢购手机场景，可能前几秒你浏览商品的时候页面提示是有库存的，当你选择完商品准备下单的时候，系统提示你下单失败，商品已售完。这其实就是先在 A（可用性）方面保证系统可以正常的服务，然后在数据的一致性方面做了些牺牲，虽然多少会影响一些用户体验，但也不至于造成用户购物流程的严重阻塞。
 
 
+##Redis
+### [分布式锁](https://juejin.cn/post/6844903830442737671)
+### 不重复有序集合
+不同的是每个元素都会关联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序。
+
+##Git
+### [reset rebase revert](https://blog.nowcoder.net/n/a9cb57d9343b43b8a645ca8ba3dd46cd)
