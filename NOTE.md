@@ -92,6 +92,10 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 
 ## Kubernetes
 
+* sidecar&#x20;
+* service mesh 服务网格通过`SideCar`之后，服务节点只做业务逻辑自身的功能，服务之间的调用只需交给`SideCar`，由`SideCar`完成注册服务、服务发现、请求路由、熔断限流、日志统计等业务无关功能。
+* lsito(一种service mesh框架)
+
 ## Security
 
 ## BigData
