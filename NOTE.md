@@ -123,11 +123,6 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 
 \##Redis
 
-* redis分布式锁
-* 原子操作
-* lua
-* [https://juejin.cn/post/6936956908007850014](https://juejin.cn/post/6936956908007850014)
-
 ### [分布式锁](https://juejin.cn/post/6844903830442737671)
 
 ### 不重复有序集合
