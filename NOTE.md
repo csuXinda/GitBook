@@ -1,5 +1,9 @@
 # note
 
+## 技巧
+
+* STAR 法则，Situation,Target,Action,Result
+
 ## ElasticSearch
 
 * \[别名]\([https://www.cnblogs.com/chenhuabin/p/13800715.html)](https://www.cnblogs.com/chenhuabin/p/13800715.html)
