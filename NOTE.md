@@ -38,6 +38,17 @@ top -H -p 16089
 ### tcp
 
 * 协议基础
+
+{% embed url="https://juejin.cn/post/6844903582550982669" %}
+
+[https://juejin.cn/post/6844903582550982669](https://juejin.cn/post/6844903582550982669)
+
+
+
+
+
+
+
 * socket编程
 
 ```shell
