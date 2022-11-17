@@ -2,6 +2,8 @@
 
 ## ElasticSearch
 
+* \[别名]\([https://www.cnblogs.com/chenhuabin/p/13800715.html)](https://www.cnblogs.com/chenhuabin/p/13800715.html)
+
 ## Linux
 
 ### 进程
@@ -31,6 +33,7 @@ top -H -p 16089
 
 ### tcp
 
+* 协议基础
 * socket编程
 
 ```shell
@@ -63,10 +66,13 @@ top -H -p 16089
 
 ## Golang
 
+### \[GC]\( [https://juejin.cn/post/7111515970669117447)](https://juejin.cn/post/7111515970669117447)
+
 ### [GMP模型](https://www.kancloud.cn/aceld/golang/1958305#2GolangGMP\_2)
 
-线程(thread)内核线程，协程(goroutine)用户线程。一个“用户态线程”必须要绑定一个“内核态线程”，但是CPU并不知道有“用户态线程”的存在，它只知道它运行的是一个“内核态线程”(Linux的PCB进程控制块)。 频繁进程/线程切换/多线程/多进程，造成CPU、内存消耗。M:N提高CPU利用率。GM引入P(Processor)调度器，把可运行的goroutine分配到工作线程上(M)，利用队列缓存和P之间的G调度减少M锁，提高利用率。\
-![img.png](<img/img (1).png>)
+* [https://juejin.cn/post/6956605745022369805#heading-14](https://juejin.cn/post/6956605745022369805#heading-14)
+* 线程(thread)内核线程，协程(goroutine)用户线程。一个“用户态线程”必须要绑定一个“内核态线程”，但是CPU并不知道有“用户态线程”的存在，它只知道它运行的是一个“内核态线程”(Linux的PCB进程控制块)。 频繁进程/线程切换/多线程/多进程，造成CPU、内存消耗。M:N提高CPU利用率。GM引入P(Processor)调度器，把可运行的goroutine分配到工作线程上(M)，利用队列缓存和P之间的G调度减少M锁，提高利用率。\
+  ![img.png](<img/img (1).png>)
 
 ### CSP并发模型
 
@@ -92,6 +98,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 
 ## Kubernetes
 
+* [架构](https://juejin.cn/post/7007362174843060255)
 * sidecar&#x20;
 * service mesh 服务网格通过`SideCar`之后，服务节点只做业务逻辑自身的功能，服务之间的调用只需交给`SideCar`，由`SideCar`完成注册服务、服务发现、请求路由、熔断限流、日志统计等业务无关功能。
 * lsito(一种service mesh框架)
@@ -121,7 +128,14 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * CP without A：如果不要求A（可用），相当于每个请求都需要在服务器之间保持强一致，而P（分区）会导致同步时间无限延长(也就是等待数据同步完才能正常访问服务)，一旦发生网络故障或者消息丢失等情况，就要牺牲用户的体验，等待所有数据全部一致了之后再让用户访问系统。设计成CP的系统其实不少，最典型的就是分布式数据库，如Redis、HBase等。对于这些分布式数据库来说，数据的一致性是最基本的要求，因为如果连这个标准都达不到，那么直接采用关系型数据库就好，没必要再浪费资源来部署分布式数据库。
 * AP wihtout C：要高可用并允许分区，则需放弃一致性。一旦分区发生，节点之间可能会失去联系，为了高可用，每个节点只能用本地数据提供服务，而这样会导致全局数据的不一致性。典型的应用就如某米的抢购手机场景，可能前几秒你浏览商品的时候页面提示是有库存的，当你选择完商品准备下单的时候，系统提示你下单失败，商品已售完。这其实就是先在 A（可用性）方面保证系统可以正常的服务，然后在数据的一致性方面做了些牺牲，虽然多少会影响一些用户体验，但也不至于造成用户购物流程的严重阻塞。
 
-\##Redis
+### Redis
+
+* 列表最大长度2^32-1，40亿
+* [https://zhuanlan.zhihu.com/p/91539644](https://zhuanlan.zhihu.com/p/91539644)
+* redis分布式锁
+* 原子操作
+* lua
+* [https://juejin.cn/post/6936956908007850014](https://juejin.cn/post/6936956908007850014)
 
 ### [分布式锁](https://juejin.cn/post/6844903830442737671)
 
@@ -129,6 +143,25 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 
 不同的是每个元素都会关联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序。
 
-\##Git
+### Git
+
+### Kafka
+
+
+
+### Mysql&#x20;
+
+[来源](https://juejin.cn/post/7136352977614274574)
+
+* b树和b+树
+* innodb和MyISAM
+* 聚集索引和非聚集索引
+* [分表](https://zq99299.github.io/note-book/back-end-storage/03/01.html#%E5%B0%8F%E7%BB%93)
+
+### 算法
+
+* 递归
+* 动态规划
+* 排序
 
 ### [reset rebase revert](https://blog.nowcoder.net/n/a9cb57d9343b43b8a645ca8ba3dd46cd)
