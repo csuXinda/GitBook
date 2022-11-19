@@ -10,10 +10,25 @@
 
 ## Linux
 
+三大调度算法-CPU、内存、磁盘[https://cloud.tencent.com/developer/article/1695055](https://cloud.tencent.com/developer/article/1695055)
+
+### 多路复用
+
+{% embed url="https://juejin.cn/post/7009997944782848007" %}
+
+[https://www.modb.pro/db/18965](https://www.modb.pro/db/189656)
+
+### [https://juejin.cn/post/7091951675384004621](https://juejin.cn/post/7091951675384004621)
+
 ### 进程
 
 进程是系统实际运行的程序，是资源分配的最小单。进程之前通信可以通过管道、信号量、共享内存、队列或者socket。一个进程可以有多个线程，同一个进程内线程共享进程资源。线程运行在CPU上，实现进程内的并发，切换比较快，开销较少。
 
+* fork linux创建进程的函数，分配资源空间
+*   如果父进程先退出，子进程还没退出那么子进程的父进程将变为init进程（托孤给了init进程）。（注：任何一个进程都必须有父进程）
+
+    如果子进程先退出，父进程还没退出，那么子进程必须等到父进程捕获到了子进程的退出状态才真正结束，否则这个时候子进程就成为僵进程（僵尸进程：只保留一些退出信息供父进程查询）
+* 进程调度[https://juejin.cn/post/7088325691988508702](https://juejin.cn/post/7088325691988508702)
 * shell
 
 ```shell
@@ -43,13 +58,9 @@ top -H -p 16089
 
 [https://juejin.cn/post/6844903582550982669](https://juejin.cn/post/6844903582550982669)
 
-
-
-
-
-
-
 * socket编程
+
+[https://blog.csdn.net/mccand1234/article/details/91346202](https://blog.csdn.net/mccand1234/article/details/91346202)
 
 ```shell
 # fd(一切皆文件）  
@@ -69,6 +80,10 @@ top -H -p 16089
 * [内存虚拟地址物理地址映射](https://blog.51cto.com/u\_15169172/4711723)
 
 ## http
+
+* nginx [https://juejin.cn/post/7070028214659186702](https://juejin.cn/post/7070028214659186702)
+* http https [https://juejin.cn/post/6844903471565504526](https://juejin.cn/post/6844903471565504526)
+* 输入Url过程，DOMAIN->DNS->IP->TCP CONNECT->RESPONSE->CLIENT EXTRACT
 
 ### header
 
@@ -171,8 +186,12 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 
 * b树和b+树
 * innodb和MyISAM
-* 聚集索引和非聚集索引
+* 聚集索引和非聚集索引[https://cloud.tencent.com/developer/article/1541265](https://cloud.tencent.com/developer/article/1541265)
 * [分表](https://zq99299.github.io/note-book/back-end-storage/03/01.html#%E5%B0%8F%E7%BB%93)
+
+### 数据结构
+
+* b树、b+树、avl树，红黑树
 
 ### 算法
 
