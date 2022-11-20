@@ -12,7 +12,7 @@
 
 三大调度算法-CPU、内存、磁盘[https://cloud.tencent.com/developer/article/1695055](https://cloud.tencent.com/developer/article/1695055)
 
-### 多路复用
+### 多路复用、水平触发、边缘触发
 
 {% embed url="https://juejin.cn/post/7009997944782848007" %}
 
@@ -187,6 +187,8 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * innodb和MyISAM
 * 聚集索引和非聚集索引[https://cloud.tencent.com/developer/article/1541265](https://cloud.tencent.com/developer/article/1541265)
 * [分表](https://zq99299.github.io/note-book/back-end-storage/03/01.html#%E5%B0%8F%E7%BB%93)
+* 事务 [https://juejin.cn/post/6844903665367547918](https://juejin.cn/post/6844903665367547918)
+* 优化 expain 覆盖索引 最左匹配原则 [https://juejin.cn/post/6945838953605890055](https://juejin.cn/post/6945838953605890055)
 
 ### 数据结构
 
