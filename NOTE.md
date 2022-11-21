@@ -10,6 +10,10 @@
 
 ## Linux
 
+### 操作系统
+
+* I/O多路复用中select/poll/epoll的区别
+
 三大调度算法-CPU、内存、磁盘[https://cloud.tencent.com/developer/article/1695055](https://cloud.tencent.com/developer/article/1695055)
 
 ### 多路复用、水平触发、边缘触发
@@ -98,6 +102,8 @@ top -H -p 16089
 
 ### \[GC]\( [https://just ejin.cn/post/7111515970669117447)](https://juejin.cn/post/7111515970669117447)
 
+（[https://juejin.cn/post/7040737998014513183](https://juejin.cn/post/7040737998014513183)）
+
 ### [GMP模型](https://www.kancloud.cn/aceld/golang/1958305#2GolangGMP\_2)
 
 * [https://juejin.cn/post/6956605745022369805#heading-14](https://juejin.cn/post/6956605745022369805#heading-14)
@@ -166,6 +172,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * lua
 * [https://juejin.cn/post/6936956908007850014](https://juejin.cn/post/6936956908007850014)
 * \[跳表]\([https://www.jianshu.com/p/9d8296562806](https://www.jianshu.com/p/9d8296562806))
+* 集群模式 [https://www.jianshu.com/p/fe7b7800473e](https://www.jianshu.com/p/fe7b7800473e)
 
 ### [分布式锁](https://juejin.cn/post/6844903830442737671)
 
