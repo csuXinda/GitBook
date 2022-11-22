@@ -200,6 +200,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 ### 数据结构
 
 * b树、b+树、avl树，红黑树
+* 二叉树，左子树大于右子树，先序、中序、后序、层次遍历[https://blog.csdn.net/Lyon\_Nee/article/details/119171977](https://blog.csdn.net/Lyon\_Nee/article/details/119171977)
 
 ### 算法
 
