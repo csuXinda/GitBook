@@ -148,6 +148,8 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 
 ### Flink
 
+* Maxwell mysql to kafka [https://www.jianshu.com/p/12b9bcb983cb](https://www.jianshu.com/p/12b9bcb983cb)
+
 ### ClickHouse
 
 ### Hadoop
