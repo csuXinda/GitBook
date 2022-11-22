@@ -7,6 +7,9 @@
 ## ElasticSearch
 
 * \[别名]\([https://www.cnblogs.com/chenhuabin/p/13800715.html)](https://www.cnblogs.com/chenhuabin/p/13800715.html)
+* \[架构]\([https://github.com/YVictor13/ElasticSearch-study/blob/master/src/Elasticsearch%20%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%8F%8A%E8%AF%B4%E6%98%8E.md)](https://github.com/YVictor13/ElasticSearch-study/blob/master/src/Elasticsearch%20%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%8F%8A%E8%AF%B4%E6%98%8E.md)
+* 倒排（全文索引）
+* cardinality高基数（[https://cloud.tencent.com/developer/article/1769165）](https://cloud.tencent.com/developer/article/1769165)
 
 ## Linux
 
@@ -174,7 +177,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * [https://juejin.cn/post/6936956908007850014](https://juejin.cn/post/6936956908007850014)
 * \[跳表]\([https://www.jianshu.com/p/9d8296562806](https://www.jianshu.com/p/9d8296562806))
 * 集群模式 [https://www.jianshu.com/p/fe7b7800473e](https://www.jianshu.com/p/fe7b7800473e)
-* raft和gossip（[https://cloud.tencent.com/developer/article/1357901](https://cloud.tencent.com/developer/article/1357901)）
+* raft和gossip（[https://cloud.tencent.com/developer/article/1357901](https://cloud.tencent.com/developer/article/1357901)）[https://cloud.tencent.com/developer/article/1826426](https://cloud.tencent.com/developer/article/1826426)
 
 ### [分布式锁](https://juejin.cn/post/6844903830442737671)
 
@@ -188,9 +191,13 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 
 
 
+
+
 ### Mysql&#x20;
 
 [来源](https://juejin.cn/post/7136352977614274574)
+
+[https://cloud.tencent.com/developer/article/1543335](https://cloud.tencent.com/developer/article/1543335)
 
 * b树和b+树
 * innodb和MyISAM
