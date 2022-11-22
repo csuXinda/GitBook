@@ -137,6 +137,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * sidecar&#x20;
 * service mesh 服务网格通过`SideCar`之后，服务节点只做业务逻辑自身的功能，服务之间的调用只需交给`SideCar`，由`SideCar`完成注册服务、服务发现、请求路由、熔断限流、日志统计等业务无关功能。
 * lsito(一种service mesh框架)
+* 面试题目 [https://www.51cto.com/article/706611.html](https://www.51cto.com/article/706611.html)
 
 ## Security
 
@@ -173,6 +174,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * [https://juejin.cn/post/6936956908007850014](https://juejin.cn/post/6936956908007850014)
 * \[跳表]\([https://www.jianshu.com/p/9d8296562806](https://www.jianshu.com/p/9d8296562806))
 * 集群模式 [https://www.jianshu.com/p/fe7b7800473e](https://www.jianshu.com/p/fe7b7800473e)
+* raft和gossip（[https://cloud.tencent.com/developer/article/1357901](https://cloud.tencent.com/developer/article/1357901)）
 
 ### [分布式锁](https://juejin.cn/post/6844903830442737671)
 
