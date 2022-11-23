@@ -176,7 +176,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * redis分布式锁
 * 原子操作
 * lua
-* [https://juejin.cn/post/6936956908007850014](https://juejin.cn/post/6936956908007850014)
+* \[分布式锁、redission][https://juejin.cn/post/6936956908007850014](https://juejin.cn/post/6936956908007850014)
 * \[跳表]\([https://www.jianshu.com/p/9d8296562806](https://www.jianshu.com/p/9d8296562806))
 * 集群模式 [https://www.jianshu.com/p/fe7b7800473e](https://www.jianshu.com/p/fe7b7800473e)
 * raft和gossip（[https://cloud.tencent.com/developer/article/1357901](https://cloud.tencent.com/developer/article/1357901)）[https://cloud.tencent.com/developer/article/1826426](https://cloud.tencent.com/developer/article/1826426)
