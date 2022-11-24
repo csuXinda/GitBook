@@ -103,16 +103,27 @@ top -H -p 16089
 
 ## Golang
 
+* slice 和数组([https://www.cnblogs.com/sparkdev/p/10704614.html](https://www.cnblogs.com/sparkdev/p/10704614.html))
+* defer return
+* map safe
+* new map
+* 匿名结构体
+* channel
+* sync.WaitGroup 死锁问题（结构体值传递）
+* 阻塞读
+
 ### \[GC]\( [https://just ejin.cn/post/7111515970669117447)](https://juejin.cn/post/7111515970669117447)
 
 （[https://juejin.cn/post/7040737998014513183](https://juejin.cn/post/7040737998014513183)）
 
-### [GMP模型](https://www.kancloud.cn/aceld/golang/1958305#2GolangGMP\_2)
+### [GMP模型（调度方面）](https://www.kancloud.cn/aceld/golang/1958305#2GolangGMP\_2)
 
 * [https://juejin.cn/post/6956605745022369805#heading-14](https://juejin.cn/post/6956605745022369805#heading-14)
 * 线程(thread)内核线程，协程(goroutine)用户线程。一个“用户态线程”必须要绑定一个“内核态线程”，但是CPU并不知道有“用户态线程”的存在，它只知道它运行的是一个“内核态线程”(Linux的PCB进程控制块)。 频繁进程/线程切换/多线程/多进程，造成CPU、内存消耗。M:N提高CPU利用率。GM引入P(Processor)调度器，把可运行的goroutine分配到工作线程上(M)，利用队列缓存和P之间的G调度减少M锁，提高利用率。\
   ![img.png](<img/img (1).png>)
-* CSP并发模型
+* CSP并发模型（通信方面）
+
+不通过共享内存，而是通过管道通信（chan、goroutine）
 
 ### [调试优化](https://cloud.tencent.com/developer/article/1469185)
 
@@ -157,6 +168,9 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 ### MongoDB
 
 ### Mysql
+
+* mysq int(4) 和 int(11) 区别
+* 索引类型 ：[https://segmentfault.com/a/1190000037683781](https://segmentfault.com/a/1190000037683781)
 
 ## ETC ZOOKEEPER CAP 乐观锁、悲观锁
 

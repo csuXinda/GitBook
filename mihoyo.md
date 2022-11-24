@@ -3,15 +3,15 @@
 \##go 基础（伪代码）
 
 * defer return 先后顺序
-* 100个任务 每次执行在线不超过30
-* 安全性map
+* 100个任务 每次执行在线不超过30 伪代码
+* 安全性map(defer) 伪代码
 * slice 截取 数组之后，变不变
 * context的应用，写一个超时伪代码
 
 \##mysql
 
 * 四种隔离级别读到的数据
-* 评论表的设计
+* 评论表的设计[https://blog.csdn.net/u013107634/article/details/89556973](https://blog.csdn.net/u013107634/article/details/89556973)
 * varchar char区别
 * int(1) int(10)
 * 索引失效两个例子
