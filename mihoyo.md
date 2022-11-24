@@ -18,9 +18,10 @@
 
 \##redis
 
-* 雪崩
+* 雪崩（redis过期时间随机、二级缓存过期时间不一样）
+* 穿透（布隆过滤器，不存在直接返回[https://www.51cto.com/article/704389.html](https://www.51cto.com/article/704389.html)）
 * 分布式锁（原子、超时、重防锁）
-* 榜单key的设置
+* 榜单key的设置（zadd、zrevrange、zrevrank、zincrby，zrem，同分问题：分数+'.'+（MAx-时间戳）），分数越大越好，时间戳越小越好-[https://juejin.cn/post/6844903795131056135](https://juejin.cn/post/6844903795131056135)
 * 无序集合
 
 \##kafka
@@ -30,5 +31,5 @@
 
 \##算法
 
-后序层次遍历带(#)
+后序层次遍历带(#)（[https://leetcode.cn/problems/binary-tree-postorder-traversal/solution/er-cha-shu-de-hou-xu-bian-li-by-leetcode-solution/](https://leetcode.cn/problems/binary-tree-postorder-traversal/solution/er-cha-shu-de-hou-xu-bian-li-by-leetcode-solution/)）
 
