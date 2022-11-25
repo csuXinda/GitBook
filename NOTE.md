@@ -233,6 +233,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * [分表](https://zq99299.github.io/note-book/back-end-storage/03/01.html#%E5%B0%8F%E7%BB%93)
 * 事务 [https://juejin.cn/post/6844903665367547918](https://juejin.cn/post/6844903665367547918)
 * 优化 expain 覆盖索引 最左匹配原则 [https://juejin.cn/post/6945838953605890055](https://juejin.cn/post/6945838953605890055)
+* 隔离级别 [https://developer.aliyun.com/article/743691](https://developer.aliyun.com/article/743691)
 
 ### 数据结构
 
