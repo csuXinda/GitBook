@@ -194,7 +194,7 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 
 * 列表最大长度2^32-1，40亿
 * [https://zhuanlan.zhihu.com/p/91539644](https://zhuanlan.zhihu.com/p/91539644)
-* redis分布式锁
+* redis分布式锁[http://kaito-kidd.com/2021/06/08/is-redis-distributed-lock-really-safe/](http://kaito-kidd.com/2021/06/08/is-redis-distributed-lock-really-safe/)
 * 原子操作
 * lua
 * \[分布式锁、redission][https://juejin.cn/post/6936956908007850014](https://juejin.cn/post/6936956908007850014)
