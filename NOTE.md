@@ -236,6 +236,8 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * 隔离级别 [https://developer.aliyun.com/article/743691](https://developer.aliyun.com/article/743691)
 * 面试题-[https://www.cxyxiaowu.com/16302.html](https://www.cxyxiaowu.com/16302.html)
 * explain [https://www.cnblogs.com/bytesfly/p/how-to-use-mysql-explain.html](https://www.cnblogs.com/bytesfly/p/how-to-use-mysql-explain.html)
+* ENUM 类型 [https://www.sjkjc.com/mysql/enum/](https://www.sjkjc.com/mysql/enum/)
+* 外键约束 [https://www.cnblogs.com/yzuzhang/p/5174720.html](https://www.cnblogs.com/yzuzhang/p/5174720.html)
 
 ### 数据结构
 

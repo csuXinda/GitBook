@@ -26,7 +26,7 @@
 
 \##kafka
 
-* 增加消费者速度
+* 增加消费者速度（[https://www.51cto.com/article/713177.html](https://www.51cto.com/article/713177.html)）
 * 保证消息的有序性（从消费者角度）（[https://cloud.tencent.com/developer/article/2079904](https://cloud.tencent.com/developer/article/2079904)）
 
 \##算法
