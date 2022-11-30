@@ -26,14 +26,10 @@
 
 \##kafka
 
-* 增加消费者速度（[https://www.51cto.com/article/713177.html](https://www.51cto.com/article/713177.html)）
+* 增加消费者速度
 * 保证消息的有序性（从消费者角度）（[https://cloud.tencent.com/developer/article/2079904](https://cloud.tencent.com/developer/article/2079904)）
 
 \##算法
 
 后序层次遍历带(#)（[https://leetcode.cn/problems/binary-tree-postorder-traversal/solution/er-cha-shu-de-hou-xu-bian-li-by-leetcode-solution/](https://leetcode.cn/problems/binary-tree-postorder-traversal/solution/er-cha-shu-de-hou-xu-bian-li-by-leetcode-solution/)）
-
-\##场景
-
-* 流量激增长，访问过载如何解决：限流，熔断、服务降级、队列延迟处理、访问计数、漏桶、令牌桶、时间窗口（[https://z.itpub.net/article/detail/F86A54C3BDB42080F9AD1DDC012FD35F](https://z.itpub.net/article/detail/F86A54C3BDB42080F9AD1DDC012FD35F)）
 
