@@ -236,6 +236,9 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * 隔离级别 [https://developer.aliyun.com/article/743691](https://developer.aliyun.com/article/743691)
 * 面试题-[https://www.cxyxiaowu.com/16302.html](https://www.cxyxiaowu.com/16302.html)
 * explain [https://www.cnblogs.com/bytesfly/p/how-to-use-mysql-explain.html](https://www.cnblogs.com/bytesfly/p/how-to-use-mysql-explain.html)
+* ENUM 类型 [https://www.sjkjc.com/mysql/enum/](https://www.sjkjc.com/mysql/enum/)
+* 外键约束 [https://www.cnblogs.com/yzuzhang/p/5174720.html](https://www.cnblogs.com/yzuzhang/p/5174720.html)
+* mysql 锁[https://xiaolincoding.com/mysql/lock/mysql\_lock.html#%E5%85%A8%E5%B1%80%E9%94%81](https://xiaolincoding.com/mysql/lock/mysql\_lock.html#%E5%85%A8%E5%B1%80%E9%94%81)
 
 ### 数据结构
 
@@ -248,5 +251,6 @@ go test -bench . -run none -benchmem -cpuprofile cpuprofile.out -memprofile memp
 * 动态规划
 * 排序
 * [https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0070.%E7%88%AC%E6%A5%BC%E6%A2%AF%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E7%89%88%E6%9C%AC.md](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0070.%E7%88%AC%E6%A5%BC%E6%A2%AF%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E7%89%88%E6%9C%AC.md)
+* 大小限制统计问题（[https://juejin.cn/post/6844904003998842887](https://juejin.cn/post/6844904003998842887)）
 
 ### [reset rebase revert](https://blog.nowcoder.net/n/a9cb57d9343b43b8a645ca8ba3dd46cd)
