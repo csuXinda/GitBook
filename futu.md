@@ -30,5 +30,5 @@ description: futu interview
 * mysql to binlog 用的什么开源-Maxwell
 * 架构设计（产品需求-技术需求-系统技术）
 * 内存不足，进程有什么影响
-* explain mysql select where indexorder by index执行计划([https://www.cnblogs.com/songwenjie/p/9418397.html](https://www.cnblogs.com/songwenjie/p/9418397.html))
+* explain mysql select where indexorder by index执行计划
 *
