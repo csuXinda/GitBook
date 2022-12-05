@@ -7,6 +7,7 @@
 * 安全性map(defer) 伪代码
 * slice 截取 数组之后，变不变
 * context的应用，写一个超时伪代码
+* pool高性能编程（[https://geektutu.com/post/hpg-sync-pool.html](https://geektutu.com/post/hpg-sync-pool.html)）
 
 \##mysql
 
