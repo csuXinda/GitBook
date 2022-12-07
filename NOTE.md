@@ -76,6 +76,7 @@ top -H -p 16089
 
 ![img\_2.png](<img/img\_2 (1).png>)
 
+* seq  ack ack=seq+len(data)+1（[https://developer.aliyun.com/article/452000](https://developer.aliyun.com/article/452000)）
 * tcpdump
 
 ```shell
