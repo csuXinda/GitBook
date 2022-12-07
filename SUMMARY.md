@@ -9,3 +9,4 @@
 * [mihoyo](mihoyo.md)
 * [futu](futu.md)
 * [IEG](ieg.md)
+* [kafka](kafka.md)
