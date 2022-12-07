@@ -16,6 +16,7 @@ description: some
 * defer 延迟调用时，需要保存函数指针和参数，因此链式调用的情况下，除了最后一个函数/方法外的函数/方法都会在调用时直接执行。也就是说 `t.f(1)` 直接执行，然后执行 `fmt.Print(3)`，最后函数返回时再执行 `.f(2)`，因此输出是 132。（[https://geektutu.com/post/qa-golang-c1.html](https://geektutu.com/post/qa-golang-c1.html)）
 * go net epoll([https://learnku.com/articles/59847)](https://learnku.com/articles/59847)
 * 场景题（[https://blog.51cto.com/u\_8887390/3308860](https://blog.51cto.com/u\_8887390/3308860)）
+* 布隆过滤器（[https://juejin.cn/post/6844903982209449991](https://juejin.cn/post/6844903982209449991)）
 
 
 
