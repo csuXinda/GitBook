@@ -10,3 +10,4 @@
 * [futu](futu.md)
 * [IEG](ieg.md)
 * [kafka](kafka.md)
+* [算法](suan-fa.md)
