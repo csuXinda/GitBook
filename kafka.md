@@ -4,7 +4,7 @@
 
 * 生产者数据的不丢失
 * 消费者数据的不丢失
-* 保存的数据不丢失
+* 保存的数据不丢失(ISR)
 
 #### 聊一聊kafka再均衡rebalance [https://blog.csdn.net/yidan7063/article/details/108234222](https://blog.csdn.net/yidan7063/article/details/108234222)
 
@@ -16,3 +16,11 @@
 
 * 幂等是针对生产者角度的特性。幂等可以保证上生产者发送的消息，不会丢失，而且不会重复
 * 为了实现Producer的幂等性，Kafka引入了Producer ID（即PID）和Sequence Number。
+
+#### kafka高性能
+
+* 零拷贝 (mmap  sendfile) 直接从磁盘文件复制到网卡设备中，而不需要经由应用程序之手顺序写
+* Page Cache
+* 批量操作
+* 数据压缩
+* 日志分段存储
