@@ -23,6 +23,7 @@ description: futu interview
 * 项目介绍
 * 算法 - 链表hash
 * 什么情况锁大量占CPU
+* IO密集、计算密集[https://cloud.tencent.com/developer/article/1806245](https://cloud.tencent.com/developer/article/1806245)
 * kafka，消费者、生产者、如何保证消息可靠性
 * 32核机器 进程0.1ms 线程池大小设计 qps是多少
 * es clickhouse
