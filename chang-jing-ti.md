@@ -1,4 +1,4 @@
-# 场景题（）
+# 场景题
 
 #### 高并发设计经验（[https://mp.weixin.qq.com/s/PPQzMOZ\_1t19hFdTO60xKA](https://mp.weixin.qq.com/s/PPQzMOZ\_1t19hFdTO60xKA)）
 
