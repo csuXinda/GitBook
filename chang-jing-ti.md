@@ -32,7 +32,15 @@
 * redis增长incre命令
 * 数据库自增长id，集群按区间区分启始位置，但是不利于扩容，
 * 数据库号段模式，获取自增ID，号段可以理解成批量获取，比如`DistributIdService`从数据库获取ID时，如果能批量获取多个ID并缓存在本地的话，那样将大大提供业务应用获取ID的效率。
-* 分布式锁（[https://xiaomi-info.github.io/2020/01/02/distributed-transaction/](https://xiaomi-info.github.io/2020/01/02/distributed-transaction/)）
+
+分布式事务（[https://xiaomi-info.github.io/2020/01/02/distributed-transaction/](https://xiaomi-info.github.io/2020/01/02/distributed-transaction/)）
+
+* 理论2PC协调者
+* 理论TCC
+* 理论本地事件-生产者消费
+* 尽最大努力通知-(轮询)
+* 可靠消息最终一致性
+* rocketmq事务
 
 #### 各种海量数据处理
 
