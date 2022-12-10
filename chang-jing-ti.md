@@ -9,16 +9,22 @@
 
 #### 设计RPC
 
-#### 短链接
+#### 短链接（[https://xie.infoq.cn/article/483fcfbe3f942cb1fa9d9ce20](https://xie.infoq.cn/article/483fcfbe3f942cb1fa9d9ce20)）
+
+* \->短链请求，生成方式：hash（URL 附加上特殊字符串，直到躲开哈希冲突）,统一发号器(snowflake,redis自增长，mysql自增长)
+* \->302临时重定向，每次浏览器都会向服务器发起请求获取新的地址，虽然会给服务器增加压力（301直接去浏览器缓存获取，缺点不能实时更新点赞等数据）
+* \->布隆过滤器（防止缓存击穿，造成服务器压力过大）
+* \->缓存数据
+* \->数据库
 
 #### 排行榜
+
+* 榜单key的设置（zadd、zrevrange、zrevrank、zincrby，zrem，同分问题：分数+'.'+（MAx-时间戳）），分数越大越好，时间戳越小越好-[https://juejin.cn/post/6844903795131056135](https://juejin.cn/post/6844903795131056135)
 
 #### 微信抢红包（[https://www.infoq.cn/article/2017hongbao-weixin](https://www.infoq.cn/article/2017hongbao-weixin)）
 
 * 对比分析：方案一：内存代替db操作，可以提高并发能力，但是可能出现数据丢失情况，不适用于资金交易系统；方案二：db乐观锁代替悲观锁，事物回滚和并发大小会影响用户体验
 * SET 化、请求排队串行化、memcached cas控制并发，维度分库
-
-
 
 #### 设计点赞功能
 
