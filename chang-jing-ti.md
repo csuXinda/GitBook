@@ -30,9 +30,15 @@
 
 #### 微博feed流、朋友圈
 
-#### 定时任务
 
-#### 分布式id、锁、事务（[https://www.cnblogs.com/chengxy-nds/p/12315917.html](https://www.cnblogs.com/chengxy-nds/p/12315917.html)）（）
+
+#### [分布式定时任务](https://yeqown.xyz/2022/01/27/%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E7%B3%BB%E7%BB%9F/)
+
+* raft选主
+* rabbitmq
+* 一致性哈希分配
+
+分布式id、锁、事务（[https://www.cnblogs.com/chengxy-nds/p/12315917.html](https://www.cnblogs.com/chengxy-nds/p/12315917.html)）（）
 
 * 雪花算法 毫秒时间戳+机器id+自增id
 * redis增长incre命令
