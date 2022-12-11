@@ -12,5 +12,6 @@
 * [kafka](kafka.md)
 * [算法](suan-fa.md)
 * [TCP](tcp.md)
-* [场景题](chang-jing-ti.md)
 * [Redis](redis.md)
+* [场景题](chang-jing-ti.md)
+* [面试回答PATTERN](mian-shi-hui-da-pattern.md)
