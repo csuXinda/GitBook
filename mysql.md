@@ -23,3 +23,14 @@ description: Mysql
 * 间隙锁
 
 可重复读隔离级别下解决幻读问题，防止新数据插入
+
+#### 分布式数据库
+
+* 分片 （[https://juejin.cn/post/6974939567053307918](https://juejin.cn/post/6974939567053307918)）
+
+&#x20;      mycat，newsql，TiDB
+
+#### binlog工具
+
+canal vs maxcell [https://cloud.tencent.com/developer/article/1630490](https://cloud.tencent.com/developer/article/1630490)
+
