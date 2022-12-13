@@ -4,7 +4,7 @@
 
 #### ！！！k8s -(pvc，文件共享，联合文件系统，kubelab）
 
-#### https加密过程 http 三次握手
+#### https加密过程 http 三次握手，大量timewait（[http://www.yunweipai.com/40430.html](http://www.yunweipai.com/40430.html)）
 
 #### DNS寻址过程
 
