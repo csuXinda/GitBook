@@ -2,15 +2,27 @@
 
 #### openapi（百度，dto->mdo body的一个加密）
 
-#### ！！！k8s -(pvc，文件共享，联合文件系统，kubelab）
+#### k8s -(pvc，文件共享，联合文件系统，kubelab，namespace、cgroup）
 
 #### https加密过程 http 三次握手，大量timewait（[http://www.yunweipai.com/40430.html](http://www.yunweipai.com/40430.html)）
 
-#### DNS寻址过程
+#### DNS寻址过程([https://juejin.cn/post/6866457093256249351#heading-2](https://juejin.cn/post/6866457093256249351#heading-2))
+
+缓存->本地host->域名服务器（递归）
 
 #### 反转链表
 
-#### 构建加速
+#### 构建加速 - 共享存储
+
+#### mysql 容灾
+
+* 读写分离 [gorm DBResolver](https://gorm.io/zh\_CN/docs/dbresolver.html)
+* 主备可以双向同步
+* 半同步复制 keepalive自动切换
+
+#### prometheus采集，自定义metric [https://www.cnblogs.com/ifnk/p/15917374.html](https://www.cnblogs.com/ifnk/p/15917374.html)
+
+* PromQL [https://juejin.cn/post/6994980341366652935](https://juejin.cn/post/6994980341366652935)
 
 ### golang 协程
 
