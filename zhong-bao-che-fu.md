@@ -6,7 +6,9 @@
 
 #### https加密过程 http 三次握手，大量timewait（[http://www.yunweipai.com/40430.html](http://www.yunweipai.com/40430.html)）
 
-#### DNS寻址过程
+#### DNS寻址过程([https://juejin.cn/post/6866457093256249351#heading-2](https://juejin.cn/post/6866457093256249351#heading-2))
+
+缓存->本地host->域名服务器（递归）
 
 #### 反转链表
 
