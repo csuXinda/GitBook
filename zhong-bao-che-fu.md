@@ -18,7 +18,7 @@
 
 * 读写分离 [gorm DBResolver](https://gorm.io/zh\_CN/docs/dbresolver.html)
 * 主备可以双向同步
-* 半同步复制 keepalive自动切换
+* 半同步复制 keepalive自动切换，双主模式会引起主键冲突，单主从+keepalive+探测脚本+vip
 
 #### prometheus采集，自定义metric [https://www.cnblogs.com/ifnk/p/15917374.html](https://www.cnblogs.com/ifnk/p/15917374.html)
 
