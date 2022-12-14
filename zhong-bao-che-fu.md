@@ -1,5 +1,22 @@
 # 中保车服
 
+* 来源ip
+* body 安全
+* 请求次数限制（redis expire incr [https://blog.51cto.com/u\_15127579/2722263](https://blog.51cto.com/u\_15127579/2722263)）
+* 签名
+* https
+* 要点
+* [https://cloud.tencent.com/developer/article/1777870](https://cloud.tencent.com/developer/article/1777870)
+  * 请求是否合法：是否是我的信任方
+  * 请求是否被篡改：是否被第三方劫持并篡改参数
+  * 防止重复请求（防重放）：是否重复请求
+
+加密过程：[https://developer.engage-all.com/backend/open-api.html#hmac-%E8%AF%B7%E6%B1%82%E7%AD%BE%E5%90%8D%E3%80%81%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B](https://developer.engage-all.com/backend/open-api.html#hmac-%E8%AF%B7%E6%B1%82%E7%AD%BE%E5%90%8D%E3%80%81%E5%93%8D%E5%BA%94%E6%B5%81%E7%A8%8B)
+
+
+
+
+
 #### Redis的内存淘汰策略（[https://juejin.cn/post/6844903927037558792](https://juejin.cn/post/6844903927037558792)）
 
 *   **noeviction(默认策略)**：对于写请求不再提供服务，直接返回错误（DEL请求和部分特殊请求除外）
