@@ -2,13 +2,11 @@
 
 #### openapi（百度，dto->mdo body的一个加密）
 
-#### k8s -(pvc，文件共享，联合文件系统，kubelab，namespace、cgroup）
+#### ！！！k8s -(pvc，文件共享，联合文件系统，kubelab）
 
 #### https加密过程 http 三次握手，大量timewait（[http://www.yunweipai.com/40430.html](http://www.yunweipai.com/40430.html)）
 
-#### DNS寻址过程([https://juejin.cn/post/6866457093256249351#heading-2](https://juejin.cn/post/6866457093256249351#heading-2))
-
-缓存->本地host->域名服务器（递归）
+#### DNS寻址过程
 
 #### 反转链表
 
