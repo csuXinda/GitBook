@@ -19,6 +19,6 @@
 * [SOAR](soar.md)
 * [中保车服](zhong-bao-che-fu.md)
 * [元戎启行](yuan-rong-qi-hang.md)
-* [K8s](k8s.md)
-* [k8s](<k8s (1).md>)
+* [K8s](<k8s (1).md>)
+* [k8s](k8s.md)
 * [ONES](ones.md)
