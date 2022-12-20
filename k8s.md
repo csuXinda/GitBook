@@ -16,3 +16,7 @@ docker 持久化存储的两种方式 [https://www.yisu.com/zixun/23274.html](ht
 ### 权限管理 [https://huweicai.com/kubernetes-permissions-overview/](https://huweicai.com/kubernetes-permissions-overview/)
 
 ### 云原生资料库 [https://lib.jimmysong.io/](https://lib.jimmysong.io/)
+
+### lstio envoy sidecar [https://www.modb.pro/db/236348](https://www.modb.pro/db/236348)
+
+### [https://www.cnblogs.com/ZhuChangwu/p/16464316.html](https://www.cnblogs.com/ZhuChangwu/p/16464316.html)
