@@ -2,9 +2,9 @@
 
 #### Kafka如何保证消息可靠性和一致性 [https://codeantenna.com/a/slGqbd6gBh](https://codeantenna.com/a/slGqbd6gBh)
 
-* 生产者数据的不丢失
-* 消费者数据的不丢失
-* 保存的数据不丢失(ISR)
+* 生产者数据的不丢失 ACK
+* 保存的数据不丢失(ISR HW)
+* 消费者数据的不丢失 （OFFSET）
 
 #### 聊一聊kafka再均衡rebalance [https://blog.csdn.net/yidan7063/article/details/108234222](https://blog.csdn.net/yidan7063/article/details/108234222)
 
