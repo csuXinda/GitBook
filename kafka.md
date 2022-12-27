@@ -17,9 +17,10 @@
 * 幂等是针对生产者角度的特性。幂等可以保证上生产者发送的消息，不会丢失，而且不会重复
 * 为了实现Producer的幂等性，Kafka引入了Producer ID（即PID）和Sequence Number。
 
-#### kafka高性能
+#### kafka高性能[https://juejin.cn/post/6986572136588509214](https://juejin.cn/post/6986572136588509214)
 
 * 零拷贝 (mmap  sendfile) 直接从磁盘文件复制到网卡设备中，而不需要经由应用程序之手顺序写
+* 顺序读写
 * Page Cache
 * 批量操作
 * 数据压缩
