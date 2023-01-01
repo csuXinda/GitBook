@@ -2,7 +2,7 @@
 
 #### 了解我们部门吗
 
-#### 如何保证线上代码质量
+#### 如何保证线上代码质量（单测覆盖率）（[http://shouce.jb51.net/gopl-zh/ch11/ch11-03.html](http://shouce.jb51.net/gopl-zh/ch11/ch11-03.html)）
 
 #### golang 协程、线程区别，用户态和内核态是什么
 
