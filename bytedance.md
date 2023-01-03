@@ -4,9 +4,17 @@
 
 #### 如何保证线上代码质量（单测覆盖率）（[http://shouce.jb51.net/gopl-zh/ch11/ch11-03.html](http://shouce.jb51.net/gopl-zh/ch11/ch11-03.html)）
 
-#### golang 协程、线程区别，用户态和内核态是什么
+#### golang 协程、线程区别，用户态和内核态是什么[https://developer.aliyun.com/article/297087](https://developer.aliyun.com/article/297087)
 
-#### 进程大量内存如何排查
+#### 进程大量内存如何排查 [https://panzhongxian.cn/cn/2020/12/memory-leak-problem-1/](https://panzhongxian.cn/cn/2020/12/memory-leak-problem-1/)
+
+* 通过 `top` 找到内存泄露的进程
+* 通过 `pmap` 找到内存泄露的地址及范围
+* 通过 `gcore` 对进程内存进行快照
+* 通过 `gdb` 加载内存信息
+* 通过 `dump binary` 导出泄露内存的内容
+* 通过 `vim` 查看内存内容
+* 根据内存中的内容，锁定对应的代码段，进行排查修复
 
 #### mysql 负载高如何解决，explain 关键字 ref代表什么
 
