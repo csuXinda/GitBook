@@ -18,6 +18,10 @@
 
 #### mysql 负载高如何解决，explain 关键字 ref代表什么
 
+磁盘IO [https://cloud.tencent.com/developer/article/1378739](https://cloud.tencent.com/developer/article/1378739)
+
+CPU [https://www.modb.pro/db/166418](https://www.modb.pro/db/166418)
+
 #### 缓存穿透
 
 #### 消息队列用途、kafka如何高性能
