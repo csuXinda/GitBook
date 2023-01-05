@@ -12,7 +12,7 @@
 
 ### 没有golang的pprof trace 如何定位进程内存、CPU
 
-### golang maxprocs 容器里面如何设置cpu核数
+### golang maxprocs 容器里面如何设置cpu核数（[https://jishuin.proginn.com/p/763bfbd5b76c](https://jishuin.proginn.com/p/763bfbd5b76c)）
 
 ###
 
