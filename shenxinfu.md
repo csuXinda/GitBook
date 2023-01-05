@@ -12,6 +12,8 @@
 
 ### 没有golang的pprof trace 如何定位进程内存、CPU
 
+### golang maxprocs 容器里面如何设置cpu核数
+
 ###
 
 ###
