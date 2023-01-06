@@ -20,7 +20,7 @@
 
 * golang自带go tool，pprof或者trace采集，定位CPU、内存代码段，弊端：程序中断
 * 通用解决方案
-* （1）CPU：top -> gdb(dlv) attach定位CPU占用高的协程（例子：死循环，select default空操作，频繁GC）
+* （1）CPU：top -> gdb(dlv) attach定位CPU占用高的协程（例子：死循环，select default空操作，频繁GC，死锁（取决于锁的实现，while尝试，自选锁，而不是sleep睡眠状态））
 * （2）mem：[https://panzhongxian.cn/cn/2020/12/memory-leak-problem-1/](https://panzhongxian.cn/cn/2020/12/memory-leak-problem-1/)（例子：[https://www.modb.pro/db/415926](https://www.modb.pro/db/415926)）
 *   （3）mysql IO负载高：磁盘子系统设备性能差，或采用ext2/ext3之类文件系统，或采用cfq之类的io scheduler，所以IOPS提上不去；
 
