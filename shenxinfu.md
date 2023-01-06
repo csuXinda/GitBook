@@ -6,6 +6,7 @@
 *   redo log是磁盘顺序写，数据刷盘是磁盘随机写，磁盘的顺序写比随机写高效的多啊。
 
     这种先预写日志后面再将数据刷盘的机制，有一个高大上的专业名词——WAL（Write-ahead logging），翻译成中文就是预写式日志。
+* statement、行级、mixed
 
 ### workflow 配置文件同步依赖、argo flow 对比（k8s云原生、每个流都在自己pod里面运行，利用率不高）
 
