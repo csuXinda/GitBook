@@ -22,6 +22,7 @@ description: some
 * 只有声明了但没赋值的interface才是nil interface([https://sanyuesha.com/2017/07/22/how-to-understand-go-interface/](https://sanyuesha.com/2017/07/22/how-to-understand-go-interface/))
 * 内存逃逸 [https://juejin.cn/post/7140864963974791175](https://juejin.cn/post/7140864963974791175)
 * 内存泄漏 [https://www.modb.pro/db/415926](https://www.modb.pro/db/415926)
+* gc 堆还是栈 [https://blog.csdn.net/csdniter/article/details/103617531](https://blog.csdn.net/csdniter/article/details/103617531)
 
 
 
