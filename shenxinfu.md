@@ -2,7 +2,7 @@
 
 ### binlog 同步&#x20;
 
-* cancal 主从同步 主->线程->binlog->从->relaylog->重放（[https://help.aliyun.com/document\_detail/273086.html](https://help.aliyun.com/document\_detail/273086.html)）
+* cancal 主从同步 主->线程->binlog->从->relaylog->重放（完全同步、半同步（多slave，其中一个确认），异步）（[https://help.aliyun.com/document\_detail/273086.html](https://help.aliyun.com/document\_detail/273086.html)）
 *   redo log是磁盘顺序写，数据刷盘是磁盘随机写，磁盘的顺序写比随机写高效的多啊。
 
     这种先预写日志后面再将数据刷盘的机制，有一个高大上的专业名词——WAL（Write-ahead logging），翻译成中文就是预写式日志。
