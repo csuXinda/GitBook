@@ -16,10 +16,21 @@
 * 通用解决方案
 * （1）CPU：top -> gdb(dlv) attach定位CPU占用高的协程（例子：死循环，select default空操作，频繁GC）
 * （2）mem：[https://panzhongxian.cn/cn/2020/12/memory-leak-problem-1/](https://panzhongxian.cn/cn/2020/12/memory-leak-problem-1/)（例子：[https://www.modb.pro/db/415926](https://www.modb.pro/db/415926)）
+*   （3）mysql IO负载高：磁盘子系统设备性能差，或采用ext2/ext3之类文件系统，或采用cfq之类的io scheduler，所以IOPS提上不去；
+
+    SQL效率不高，比如没有索引，或者一次性读取大量数据，所以需要更多的I/O；
+
+    可用内存太小，内存中能缓存/缓冲的数据不多，所以需要更多的I/O。调整buffer\_pool,innodb\_io\_capacity
+* （4）mysql CPU 高：
+  * 慢查询：建议使用 DBbrain 来排查和优化，详情请参见 [慢查询](https://cloud.tencent.com/document/product/236/35416#mcx)。
+  * 计算量大：因处理数据量大，导致 CPU 利用率过高，处理措施详情请参见 [计算量大](https://cloud.tencent.com/document/product/236/35416#jsld)。
+  * 高 QPS：因访问量过大，导致 CPU 利用率过高，处理措施详情参见 [高 QPS](https://cloud.tencent.com/document/product/236/35416#gqps)。
 
 ### golang maxprocs 容器里面如何设置cpu核数（[https://jishuin.proginn.com/p/763bfbd5b76c](https://jishuin.proginn.com/p/763bfbd5b76c)）
 
 ### GMP chan缓冲、无缓冲 底层架构
+
+[https://juejin.cn/post/7129085275266875422](https://juejin.cn/post/7129085275266875422)
 
 
 
