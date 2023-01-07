@@ -20,6 +20,7 @@ Docker 在 Linux 的底层技术有：Namespaces（资源隔离）、CGroups （
 
 * docker layer（[https://developer.aliyun.com/article/981453](https://developer.aliyun.com/article/981453)）
 * Docker 容器中的每一层只读的 image，以及最上层可读写的文件系统，均被称为 layer。如此一来，layer 的范畴比 image 多了一层，即多包含了最上层的 read-write filesystem
+* unionFS rootfs+读层+读写层+写时复制([https://www.jianshu.com/p/3ba255463047](https://www.jianshu.com/p/3ba255463047))
 
 docker 持久化存储的两种方式 [https://www.yisu.com/zixun/23274.html](https://www.yisu.com/zixun/23274.html)
 
@@ -33,6 +34,8 @@ docker 持久化存储的两种方式 [https://www.yisu.com/zixun/23274.html](ht
 （2）bridge产生network namespace和docker0网卡通信
 
 （3）k8s(寻址) **`kube-proxy的pod通过监听集群中service和endpoints资源的变化，刷新节点上的iptables`**[https://juejin.cn/post/7134143215380201479](https://juejin.cn/post/7134143215380201479)
+
+
 
 ### 权限管理 [https://huweicai.com/kubernetes-permissions-overview/](https://huweicai.com/kubernetes-permissions-overview/)
 
