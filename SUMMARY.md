@@ -14,7 +14,7 @@
 * [TCP](tcp.md)
 * [Redis](redis.md)
 * [场景题](chang-jing-ti.md)
-* [面试回答PATTERN(面试官问我)](mian-shi-hui-da-pattern-mian-shi-guan-wen-wo.md)
+* [面试回答PATTERN(面试官问我)](mian-shi-hui-da-pattern.md)
 * [Mysql](mysql.md)
 * [SOAR](soar.md)
 * [中保车服](zhong-bao-che-fu.md)
