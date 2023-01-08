@@ -23,14 +23,14 @@ description: futu interview
 * 项目介绍
 * 算法 - 链表hash
 * 什么情况锁大量占CPU
-* IO密集、CPU密集[https://cloud.tencent.com/developer/article/1806245](https://cloud.tencent.com/developer/article/1806245)
+* IO密集、计算密集[https://cloud.tencent.com/developer/article/1806245](https://cloud.tencent.com/developer/article/1806245)
 * kafka，消费者、生产者、如何保证消息可靠性
 * 32核机器 进程0.1ms 线程池大小设计 qps是多少
 * es clickhouse
 * 编排项目为什么自研、airflow
 * mysql to binlog 用的什么开源-Maxwell
 * 架构设计（产品需求-技术需求-系统技术）
-* 内存不足，进程有什么影响([https://blog.51cto.com/dbadadong/5195985](https://blog.51cto.com/dbadadong/5195985))
+* 内存不足，进程有什么影响
 * explain mysql select where indexorder by index执行计划([https://www.cnblogs.com/songwenjie/p/9418397.html](https://www.cnblogs.com/songwenjie/p/9418397.html))
 
 ### 三面
