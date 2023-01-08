@@ -46,6 +46,7 @@ description: some
 这里4，5是与用户程序是并发执行的，所以stw的时间被大大缩短了。 不过这样做可能会导致新创建的对象被误清除，因此使用了写屏障技术来解决该问题，大体逻辑是当创建新对象时将新对象置为灰色。
 
 * golang channel nil close 区别（[https://zhuanlan.zhihu.com/p/564848742](https://zhuanlan.zhihu.com/p/564848742)）+ select case channel(nil)的话这条分支读写永久阻塞，相当于失效
+* timer ticker 用法（[https://zhuanlan.zhihu.com/p/564848742](https://zhuanlan.zhihu.com/p/564848742)）
 
 
 
