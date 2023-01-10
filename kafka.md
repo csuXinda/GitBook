@@ -2,9 +2,9 @@
 
 #### Kafka如何保证消息可靠性和一致性 [https://codeantenna.com/a/slGqbd6gBh](https://codeantenna.com/a/slGqbd6gBh)
 
-* 生产者数据的不丢失 ACK
-* 保存的数据不丢失(ISR HW)
-* 消费者数据的不丢失 （OFFSET）
+* 生产者数据的不丢失
+* 消费者数据的不丢失
+* 保存的数据不丢失(ISR)
 
 #### 聊一聊kafka再均衡rebalance [https://blog.csdn.net/yidan7063/article/details/108234222](https://blog.csdn.net/yidan7063/article/details/108234222)
 
@@ -17,17 +17,10 @@
 * 幂等是针对生产者角度的特性。幂等可以保证上生产者发送的消息，不会丢失，而且不会重复
 * 为了实现Producer的幂等性，Kafka引入了Producer ID（即PID）和Sequence Number。
 
-#### kafka高性能[https://juejin.cn/post/6986572136588509214](https://juejin.cn/post/6986572136588509214)
+#### kafka高性能
 
-* 顺序读写
-* Page Cache、零拷贝 (mmap  sendfile，指的CPU拷贝)（[https://giraffetree.me/2020/11/16/Kafka-%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3-%E9%A1%B5%E9%9D%A2%E7%BC%93%E5%AD%98-page-cache/](https://giraffetree.me/2020/11/16/Kafka-%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3-%E9%A1%B5%E9%9D%A2%E7%BC%93%E5%AD%98-page-cache/)）
+* 零拷贝 (mmap  sendfile) 直接从磁盘文件复制到网卡设备中，而不需要经由应用程序之手顺序写
+* Page Cache
 * 批量操作
 * 数据压缩
 * 日志分段存储
-
-### kafka vs rocketmq [https://www.jianshu.com/p/6e9c48c2e580](https://www.jianshu.com/p/6e9c48c2e580)
-
-* 分布式事务
-* cap kafka偏向于A，rockert偏向于C，同一topic的在一个文件上
-* 延迟消息
-* rockermq顺序消费
