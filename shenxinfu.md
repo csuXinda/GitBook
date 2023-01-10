@@ -18,7 +18,11 @@
 
 ### 没有golang的pprof trace 如何定位进程内存、CPU
 
-* golang自带go tool，pprof或者trace采集，定位CPU、内存代码段，弊端：程序中断
+* golang profile，pprof或者trace采集，定位CPU、内存代码段，弊端：程序中断
+* dlv ([https://blog.csdn.net/zoudaohoutiani/article/details/127030389](https://blog.csdn.net/zoudaohoutiani/article/details/127030389))
+
+top -H 线程->dlv attach 进程->goroutines查看协程对应的线程->bt查看堆栈->定位到代码位置
+
 * 通用解决方案
 * （1）CPU：top -> gdb(dlv) attach定位CPU占用高的协程（例子：死循环，select default空操作，频繁GC，死锁（取决于锁的实现，while尝试，自选锁，而不是sleep睡眠状态））([https://blog.csdn.net/liuhui251435428/article/details/106177611](https://blog.csdn.net/liuhui251435428/article/details/106177611))([https://blog.51cto.com/u\_15127539/4388975](https://blog.51cto.com/u\_15127539/4388975))
 * （2）mem：[https://panzhongxian.cn/cn/2020/12/memory-leak-problem-1/](https://panzhongxian.cn/cn/2020/12/memory-leak-problem-1/)（例子：[https://www.modb.pro/db/415926](https://www.modb.pro/db/415926)）
