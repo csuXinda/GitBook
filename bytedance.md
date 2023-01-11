@@ -29,3 +29,15 @@ CPU [https://www.modb.pro/db/166418](https://www.modb.pro/db/166418)
 #### 算法 寻找峰值 [https://leetcode.cn/problems/find-peak-element/](https://leetcode.cn/problems/find-peak-element/)
 
 #### 微服务优缺点
+
+
+
+### 二面
+
+* 接雨水([https://leetcode.cn/problems/trapping-rain-water/](https://leetcode.cn/problems/trapping-rain-water/))
+* 缓存击穿、缓存穿透
+* 项目（架构设计）
+* https加密
+* 对称加密、签名
+* redis分布式锁（red clock）
+
