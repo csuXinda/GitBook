@@ -52,6 +52,7 @@ top -H 线程->dlv attach 进程->goroutines查看协程对应的线程->bt查�
 * 数据平台的竞品分析？
 * 项目中最挑战的点
 * 职业规划
+* 最新技术（**DevSecOps**）
 
 
 
