@@ -4,6 +4,10 @@ description: Mysql
 
 # Mysql
 
+#### 高可靠
+
+* MHA（Master High Availability）[https://blog.51cto.com/u\_14154700/2472806](https://blog.51cto.com/u\_14154700/2472806)
+
 #### 如何回答优化数据库问题
 
 * 表设计阶段：not null，大字段，char varchar，尽量int不用varchar，如ip，处理更简单， 减少联表操作，覆盖索引避免回表，排序联合索引
