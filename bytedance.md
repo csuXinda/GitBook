@@ -37,7 +37,7 @@ CPU [https://www.modb.pro/db/166418](https://www.modb.pro/db/166418)
 * 接雨水([https://leetcode.cn/problems/trapping-rain-water/](https://leetcode.cn/problems/trapping-rain-water/))
 * 缓存击穿、缓存穿透，缓存过期时间（[https://www.jianshu.com/p/ea467a2bd662](https://www.jianshu.com/p/ea467a2bd662)）
 * 项目（架构设计）
-* https加密
+* https加密、ak/sk
 * 对称加密、签名
 * redis分布式锁（red clock）
 
