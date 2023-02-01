@@ -44,5 +44,3 @@ description: Mysql
 
 canal vs maxcell [https://cloud.tencent.com/developer/article/1630490](https://cloud.tencent.com/developer/article/1630490)
 
-### binlog 推荐row模式（[https://blog.csdn.net/u013066244/article/details/121262550](https://blog.csdn.net/u013066244/article/details/121262550)）
-
