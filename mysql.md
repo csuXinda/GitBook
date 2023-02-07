@@ -28,7 +28,7 @@ description: Mysql
 
 * 乐观锁、悲观锁
 
-乐观锁的思路一般是表中增加版本字段，更新时where语句中增加版本的判断，算是一种CAS（Compare And Swap）操作，商品库存场景中number起到了版本控制（相当于version）的作用（ AND number=#{number}）。悲观锁之所以是悲观，在于他认为本次操作会发生并发冲突，所以一开始就对商品加上锁（SELECT ... FOR UPDATE），然后就可以安心的做判断和更新，因为这时候不会有别人更新这条商品库存。#那么它加的是行锁还是表锁，这就要看是不是用了索引/主键。没用索引/主键的话就是表锁，否则就是是行锁#
+乐观锁的思路一般是表中增加版本字段，更新时where语句中增加版本的判断，算是一种CAS（Compare And Swep）操作，商品库存场景中number起到了版本控制（相当于version）的作用（ AND number=#{number}）。悲观锁之所以是悲观，在于他认为本次操作会发生并发冲突，所以一开始就对商品加上锁（SELECT ... FOR UPDATE），然后就可以安心的做判断和更新，因为这时候不会有别人更新这条商品库存。#那么它加的是行锁还是表锁，这就要看是不是用了索引/主键。没用索引/主键的话就是表锁，否则就是是行锁#
 
 * 间隙锁
 
@@ -43,6 +43,4 @@ description: Mysql
 #### binlog工具
 
 canal vs maxcell [https://cloud.tencent.com/developer/article/1630490](https://cloud.tencent.com/developer/article/1630490)
-
-### binlog 推荐row模式（[https://blog.csdn.net/u013066244/article/details/121262550](https://blog.csdn.net/u013066244/article/details/121262550)）
 

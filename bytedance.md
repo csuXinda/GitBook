@@ -45,7 +45,7 @@ CPU [https://www.modb.pro/db/166418](https://www.modb.pro/db/166418)
 
 ### 地理位置中台
 
-* 最长不重复字串
+* 最长不重复字串([https://leetcode.cn/problems/longest-substring-without-repeating-characters/](https://leetcode.cn/problems/longest-substring-without-repeating-characters/))
 * redis (内存淘汰回收)
 * zset底层实现（skiplist dict）([https://juejin.cn/post/6893072817206591496](https://juejin.cn/post/6893072817206591496))，
 
