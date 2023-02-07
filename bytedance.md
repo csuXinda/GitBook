@@ -1,5 +1,7 @@
 # ByteDance
 
+## 飞书
+
 #### 了解我们部门吗
 
 #### 如何保证线上代码质量（单测覆盖率）（[http://shouce.jb51.net/gopl-zh/ch11/ch11-03.html](http://shouce.jb51.net/gopl-zh/ch11/ch11-03.html)）
@@ -29,3 +31,26 @@ CPU [https://www.modb.pro/db/166418](https://www.modb.pro/db/166418)
 #### 算法 寻找峰值 [https://leetcode.cn/problems/find-peak-element/](https://leetcode.cn/problems/find-peak-element/)
 
 #### 微服务优缺点
+
+
+
+### 二面
+
+* 接雨水([https://leetcode.cn/problems/trapping-rain-water/](https://leetcode.cn/problems/trapping-rain-water/))
+* 缓存击穿、缓存穿透，缓存过期时间（[https://www.jianshu.com/p/ea467a2bd662](https://www.jianshu.com/p/ea467a2bd662)）
+* 项目（架构设计）
+* https加密、ak/sk
+* 对称加密、签名
+* redis分布式锁（red clock）
+
+### 地理位置中台
+
+* 最长不重复字串
+* redis (内存淘汰回收)
+* zset底层实现（skiplist dict）([https://juejin.cn/post/6893072817206591496](https://juejin.cn/post/6893072817206591496))，
+
+&#x20;    过期删除策略、过期淘汰策略（[https://www.51cto.com/article/712947.html](https://www.51cto.com/article/712947.html)）
+
+* mysql （分库分表、主从同步、异步、同步）
+* 聊项目
+
