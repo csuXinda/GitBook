@@ -47,7 +47,7 @@ CPU [https://www.modb.pro/db/166418](https://www.modb.pro/db/166418)
 
 * 最长不重复字串([https://leetcode.cn/problems/longest-substring-without-repeating-characters/](https://leetcode.cn/problems/longest-substring-without-repeating-characters/))
 * redis (内存淘汰回收)
-* zset底层实现（skiplist dict）([https://juejin.cn/post/6893072817206591496](https://juejin.cn/post/6893072817206591496))，
+* zset底层实现（skiplist dict）([https://www.cnblogs.com/jajian/p/16801106.html](https://www.cnblogs.com/jajian/p/16801106.html))([https://juejin.cn/post/6893072817206591496](https://juejin.cn/post/6893072817206591496))
 
 &#x20;    过期删除策略、过期淘汰策略（[https://www.51cto.com/article/712947.html](https://www.51cto.com/article/712947.html)）
 
