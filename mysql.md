@@ -8,10 +8,6 @@ description: Mysql
 
 * MHA（Master High Availability）[https://blog.51cto.com/u\_14154700/2472806](https://blog.51cto.com/u\_14154700/2472806)
 
-### 分库分表
-
-* [https://mp.weixin.qq.com/s?\_\_biz=Mzg3NzU5NTIwNg==\&mid=2247502983\&idx=1\&sn=47cc9079b01940cbb83d4f71972e5d20\&chksm=cf2213aef8559ab845c5740abc98c335f0b040976bc39781ade95ea085cf32a183021a54ff36\&token=1274856030\&lang=zh\_CN#rd](https://mp.weixin.qq.com/s?\_\_biz=Mzg3NzU5NTIwNg==\&mid=2247502983\&idx=1\&sn=47cc9079b01940cbb83d4f71972e5d20\&chksm=cf2213aef8559ab845c5740abc98c335f0b040976bc39781ade95ea085cf32a183021a54ff36\&token=1274856030\&lang=zh\_CN#rd)
-
 #### 如何回答优化数据库问题
 
 * 表设计阶段：not null，大字段，char varchar，尽量int不用varchar，如ip，处理更简单， 减少联表操作，覆盖索引避免回表，排序联合索引
