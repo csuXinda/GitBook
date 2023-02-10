@@ -60,4 +60,5 @@ CPU [https://www.modb.pro/db/166418](https://www.modb.pro/db/166418)
 * 做题 {2,4,9} 组合成大于24321的最小数[https://blog.csdn.net/iamzhaiwei/article/details/7683940](https://blog.csdn.net/iamzhaiwei/article/details/7683940)
 * zk底层实现
 * mapreduce?
+* flink zookeeper
 
