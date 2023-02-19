@@ -101,7 +101,39 @@ description: some
 * 超时控制
 * pipeline控制
 
+#### channel 是否线程安全？锁用在什么地方？
 
+* channel的底层实现中, hchan结构体中采用Mutex锁来保证数据读写安全。在对循环数组buf中的数据进行入队和出队操作时，必须先获取互斥锁，才能操作chrnel数据
+
+#### go channel 的底层实现原理 （数据结构）
+
+* 用来保存goroutine之间传递数据的循环数组:buf&#x20;
+* 用来记录此循环数组当前发送或接收数据的下标值:sendx和recvx&#x20;
+* 用于保存向该chan发送和从该chan接收数据被阻塞的goroutine队列: sendq和recvq&#x20;
+* 保证channel写入和读取数据时线程安全的锁:lock&#x20;
+
+#### nil、关闭的 channel、有数据的 channel，再进行读、写、关闭会怎么样[https://www.cnblogs.com/jiujuan/p/16014608.html](https://www.cnblogs.com/jiujuan/p/16014608.html)
+
+#### 向 channel 发送数据和从 channel 读数据的流程是什么样的（[https://zhuyasen.com/post/channel.html](https://zhuyasen.com/post/channel.html)）
+
+#### map 使用注意的点，并发安全？
+
+* 常见锁（性能损耗）
+* 分片锁（通过讲key分片，减少锁的范围，提高性能）
+* 同步map（cas原子操作、read、diryt冗余一份数据，读写分离）
+
+#### map删除key后内存释放？
+
+Go 提供了 delete() 方法删除 key，这种方式的删除不会释放内存，仅仅将 key 的关联值标记为 EmptyOne, [Go1.19](https://github.com/golang/go/blob/master/src/runtime/map.go#L731L803)。\
+如何真正的释放 Map 的内存，将 Map 设置为 nil，然后等待 GC 就行了。
+
+#### map nil 和空区别[https://www.cnblogs.com/beatleC/p/16240741.html](https://www.cnblogs.com/beatleC/p/16240741.html)
+
+#### map扩容 [https://jishuin.proginn.com/p/763bfbd5da65](https://jishuin.proginn.com/p/763bfbd5da65)
+
+* key数量过多或者装载因子过大触发，在实际应用中，Map 扩容都是分多次、渐进式地完成，而不是一性次完成扩容
+
+####
 
 ####
 
