@@ -94,6 +94,13 @@ description: some
 * 用于控制goroutine的整个生命周期，进行上下文的管理
 * 结构：[https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-context/](https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-context/)
 
+#### context 应用场景
+
+* rpc调用
+* http value传值
+* 超时控制
+* pipeline控制
+
 
 
 ####
