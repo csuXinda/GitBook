@@ -162,9 +162,31 @@ Go 提供了 delete() 方法删除 key，这种方式的删除不会释放内存
 * 读写锁的底层是基于互斥锁实现的
 * 计数信号量实现控制[https://blog.csdn.net/sunxianghuang/article/details/104780010](https://blog.csdn.net/sunxianghuang/article/details/104780010)
 
-####
+#### sync 同步原语有哪些？各有什么作用
 
-####
+* sync.WaitGroup 用于最终完成的场景，关键点在于一定要等待所有协程都执行完毕
+* sync.Cond 可以用于发号施令，一声令下所有协程都可以开始执行，关键点在于协程开始的时候是等待的，要等待 sync.Cond 唤醒才能执行
+* sync.Once 并发情况下只执行一次
+* sync.Mutex sync.RWMutex
+* sync.Pool sync.Pool 用于存储那些被分配了但是没有被使用，而未来可能会使用的值。这样就可以不用再次经过内存分配，可直接复用已有对象，减轻 GC 的压力，从而提升系统的性能。当程序并发度非常高的情况下，短时间内需要创建大量的临时对象。而这些对象是都是分配在堆上的，会给 GC 造成很大压力，严重影响程序的性能.json 的反序列化在文本解析和网络通信过程中非常常见，当程序并发度非常高的情况下，短时间内需要创建大量的临时对象。而这些对象是都是分配在堆上的，会给 GC 造成很大压力，严重影响程序的性能
+
+#### 多个 goroutine 对同一个 map 写会 panic，异常是否可以用 defer 捕获
+
+* fatal error 系统级错误无法捕获
+
+#### 实现一个协程池[https://learnku.com/articles/65312](https://learnku.com/articles/65312)
+
+#### select 作用
+
+* golang 中的 select 就是用来监听和 channel 有关的 IO 操作，当 IO 操作发生时，触发相应的动作。select 只能应用于 channel 的操作，既可以用于 channel 的数据接收，也可以用于 channel 的数据发送。如果 select 的多个分支都满足条件，则会随机的选取其中一个满足条件的分支执行。
+
+#### 介绍一下大对象小对象，为什么小对象多了会造成 gc 压力
+
+* 通常小对象过多会导致GC三色法消耗过多的CPU。优化思路是，减少对象分配。
+
+**Go中的map如何实现顺序读取？**
+
+* Go中map如果要实现顺序读取的话，可以先把map中的key，通过sort包排序
 
 
 
