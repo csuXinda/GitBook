@@ -4,6 +4,24 @@ description: some
 
 # Golang
 
+#### unsafe point （[https://www.cnblogs.com/sunsky303/p/11820500.html](https://www.cnblogs.com/sunsky303/p/11820500.html)）
+
+*   第一是 `unsafe.Pointer` 可以让你的变量在不同的指针类型转来转去，也就是表示为任意可寻址的指针类型。第二是 `uintptr` 常用于与 `unsafe.Pointer` 打配合，用于做指针运算，和C (\*void)指针一样。
+
+    unsafe是不安全的，所以我们应该尽可能少的使用它，比如内存的操纵，这是绕过Go本身设计的安全机制的，不当的操作，可能会破坏一块内存，而且这种问题非常不好定位。
+
+    当然必须的时候我们可以使用它，比如底层类型相同的数组之间的转换；比如使用sync/atomic包中的一些函数时；还有访问Struct的私有字段时；该用还是要用，不过一定要慎之又慎。
+
+    还有，整个unsafe包都是用于Go编译器的，不用运行时，在我们编译的时候，Go编译器已经把他们都处理了。
+
+    \
+
+
+#### reflect 反射原理
+
+* 数据对应的内存地址，然后把该数据转成interface，通过查看interface中的类型结构，就可以知道该数据的结构。interface 包括type value
+*
+
 #### tag 实现
 
 * Go 中解析的 tag 是通过反射实现的，反射是指计算机程序在运行时（Run time）可以访问、检测和修改它本身状态或行为的一种能力或动态知道给定数据对象的类型和结构，并有机会修改它。反射将接口变量转换成反射对象 Type 和 Value；反射可以通过反射对象 Value 还原成原先的接口变量；反射可以用来修改一个变量的值，前提是这个值可以被修改；tag是啥:结构体支持标记，name string `json:name-field` 就是 `json:name-field` 这部分
