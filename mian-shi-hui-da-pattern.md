@@ -2,9 +2,6 @@
 description: PATTERN
 ---
 
-# 面试回答PATTERN(面试官问我)
+# 面试回答PATTERN
 
-* 设计一个高并发系统（[https://juejin.cn/post/7185736156573597756](https://juejin.cn/post/7185736156573597756)）
 * [如何回答pattern](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%B2%BE%E8%AE%B2/07%20%20RPC%EF%BC%9A%E5%A6%82%E4%BD%95%E5%9C%A8%E9%9D%A2%E8%AF%95%E4%B8%AD%E5%B1%95%E7%8E%B0%E5%87%BA%E2%80%9C%E9%80%A0%E8%BD%AE%E5%AD%90%E2%80%9D%E7%9A%84%E8%83%BD%E5%8A%9B%EF%BC%9F.md)！！！！
-* 点->线->面（顺序逻辑）
-* 面试官问我系列（[https://juejin.cn/post/7003527396427038733](https://juejin.cn/post/7003527396427038733)）
