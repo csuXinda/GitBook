@@ -4,6 +4,8 @@ description: some
 
 # Golang
 
+#### goreplay 流量重复，改变倍率[https://juejin.cn/post/6999586008698208263](https://juejin.cn/post/6999586008698208263)
+
 #### GC垃圾回收
 
 GC 的底层判断对象存活思路主要是两个，引用计数和可达性分析。由于引用计数存在循环引用问题，所以大多数 GC 都是按照后者的思路实现的，Golang 也不例外。
