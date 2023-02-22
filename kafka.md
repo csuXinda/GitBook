@@ -27,7 +27,7 @@
 
 ### kafka vs rocketmq [https://www.jianshu.com/p/6e9c48c2e580](https://www.jianshu.com/p/6e9c48c2e580)
 
-* 分布式事务
+* 分布式事务 [https://www.cnblogs.com/youzhibing/p/15354713.html](https://www.cnblogs.com/youzhibing/p/15354713.html)
 * cap kafka偏向于A，rockert偏向于C，同一topic的在一个文件上
 * 延迟消息
 * rockermq顺序消费
