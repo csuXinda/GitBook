@@ -175,7 +175,7 @@ HTTP/2
 
 * 常见锁（性能损耗）
 * 分片锁（通过讲key分片，减少锁的范围，提高性能）
-* 同步map（cas原子操作、read、diryt冗余一份数据，读写分离）
+* 同步map（cas原子操作、read、diryt冗余一份数据，先读read，原子操作，再读dirty，跟怒miss次数把dirty上升为read，读写分离, dirty延迟双删）
 
 #### map删除key后内存释放？
 
