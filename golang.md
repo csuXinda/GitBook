@@ -4,6 +4,37 @@ description: some
 
 # Golang
 
+#### 秒杀系统：异步，缓存，排斥锁
+
+#### goreplay 流量重复，改变倍率[https://juejin.cn/post/6999586008698208263](https://juejin.cn/post/6999586008698208263)
+
+#### gin性能高原因（httprouter，字典树）[https://juejin.cn/post/7121614553649004575](https://juejin.cn/post/7121614553649004575)
+
+#### context 用法，是否线程安全[https://segmentfault.com/a/1190000041391870](https://segmentfault.com/a/1190000041391870)
+
+#### select 底层实现
+
+#### slice 函数内扩容后，函数外原参数不变，如何解决
+
+#### go select 接受写channel，default+超时解决消费生产问题
+
+#### GC垃圾回收
+
+GC 的底层判断对象存活思路主要是两个，引用计数和可达性分析。由于引用计数存在循环引用问题，所以大多数 GC 都是按照后者的思路实现的，Golang 也不例外。
+
+「三色标记法」的原理是，将对象分为了三种状态：
+
+* 白色，默认值。本次回收没被扫描过的对象都是白色的。确认不可达的对象也是白色，但是会被标记「不可达」。
+* 灰色，中间状态。本对象有被外部引用，但是本对象引用的其它对象尚未全部检测完。
+* 黑色，本对象有被其它对象引用，且已检测完本对象引用的其它对象。
+
+最终将白色状态的对象回收掉。为了解决其中会存在的漏标、多标问题，它通过「混合写屏障」的机制来解决。思路是，
+
+* 将对象分为堆上的对象和栈上的对象。
+* GC 开始将栈上的对象全部扫描并标记为黑色，无需 STW。并且之后不再进行第二次重复扫描
+* 在 GC 期间，任何在栈上创建的新对象，均为黑色。
+* 在 GC 期间，在堆上被删除或者添加的对象都标记为灰色。后续继续扫描。
+
 #### unsafe point （[https://www.cnblogs.com/sunsky303/p/11820500.html](https://www.cnblogs.com/sunsky303/p/11820500.html)）
 
 *   第一是 `unsafe.Pointer` 可以让你的变量在不同的指针类型转来转去，也就是表示为任意可寻址的指针类型。第二是 `uintptr` 常用于与 `unsafe.Pointer` 打配合，用于做指针运算，和C (\*void)指针一样。
@@ -156,7 +187,7 @@ HTTP/2
 
 * 常见锁（性能损耗）
 * 分片锁（通过讲key分片，减少锁的范围，提高性能）
-* 同步map（cas原子操作、read、diryt冗余一份数据，读写分离）
+* 同步map（cas原子操作、read、diryt冗余一份数据，先读read，原子操作，再读dirty，跟怒miss次数把dirty上升为read，读写分离, dirty延迟双删）
 
 #### map删除key后内存释放？
 
@@ -282,6 +313,8 @@ Go 提供了 delete() 方法删除 key，这种方式的删除不会释放内存
 
 * golang channel nil close 区别（[https://zhuanlan.zhihu.com/p/564848742](https://zhuanlan.zhihu.com/p/564848742)）+ select case channel(nil)的话这条分支读写永久阻塞，相当于失效
 * timer ticker 用法（[https://zhuanlan.zhihu.com/p/564848742](https://zhuanlan.zhihu.com/p/564848742)）
+
+### GMP
 
 
 
