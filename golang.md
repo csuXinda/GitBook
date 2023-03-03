@@ -12,6 +12,8 @@ description: some
 
 #### context 用法，是否线程安全[https://segmentfault.com/a/1190000041391870](https://segmentfault.com/a/1190000041391870)
 
+#### go once 实现，双重检查锁（[https://juejin.cn/post/7124720007447052302](https://juejin.cn/post/7124720007447052302)）
+
 #### select 底层实现
 
 #### slice 函数内扩容后，函数外原参数不变，如何解决
